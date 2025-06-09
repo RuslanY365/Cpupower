@@ -1,0 +1,216 @@
+rusly05@rusly05-venusseries:~$ sudo apt update
+sudo apt install linux-cpupower
+[sudo] password di rusly05: 
+Trovato:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Trovato:2 http://archive.ubuntu.com/ubuntu noble InRelease                        
+Trovato:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease                
+Trovato:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Trovato:5 https://ppa.launchpadcontent.net/kisak/kisak-mesa/ubuntu noble InRelease
+Trovato:6 https://ppa.launchpadcontent.net/openjdk-r/ppa/ubuntu noble InRelease
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+2 pacchetti possono essere aggiornati: eseguire "apt list --upgradable" per vederli.
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+Il pacchetto linux-cpupower non ha versioni disponibili, ma è nominato da un altro
+pacchetto. Questo potrebbe indicare che il pacchetto è mancante, obsoleto
+oppure è disponibile solo all'interno di un'altra sorgente
+
+E: Il pacchetto "linux-cpupower" non ha candidati da installare
+rusly05@rusly05-venusseries:~$ sudo apt update
+sudo apt install -cpupower
+Trovato:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Trovato:2 http://security.ubuntu.com/ubuntu noble-security InRelease
+Trovato:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Trovato:4 https://ppa.launchpadcontent.net/kisak/kisak-mesa/ubuntu noble InRelease
+Trovato:5 https://ppa.launchpadcontent.net/openjdk-r/ppa/ubuntu noble InRelease
+Trovato:6 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+2 pacchetti possono essere aggiornati: eseguire "apt list --upgradable" per vederli.
+W: Impossibile leggere pupower - open (2: File o directory non esistente)
+rusly05@rusly05-venusseries:~$ sudo apt update
+sudo apt install cpupower
+Trovato:1 http://archive.ubuntu.com/ubuntu noble InRelease
+Trovato:2 http://security.ubuntu.com/ubuntu noble-security InRelease              
+Trovato:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease                
+Trovato:4 http://archive.ubuntu.com/ubuntu noble-backports InRelease              
+Trovato:5 https://ppa.launchpadcontent.net/kisak/kisak-mesa/ubuntu noble InRelease
+Trovato:6 https://ppa.launchpadcontent.net/openjdk-r/ppa/ubuntu noble InRelease
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+2 pacchetti possono essere aggiornati: eseguire "apt list --upgradable" per vederli.
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+E: Impossibile trovare il pacchetto cpupower
+rusly05@rusly05-venusseries:~$ sudo apt-get install -y linux-tools-common
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+linux-tools-common è già alla versione più recente (6.8.0-60.63).
+È stato impostato linux-tools-common per l'installazione manuale.
+0 aggiornati, 0 installati, 0 da rimuovere e 2 non aggiornati.
+rusly05@rusly05-venusseries:~$ sudo apt-get install cpufrequtils
+Lettura elenco dei pacchetti... Fatto
+Generazione albero delle dipendenze... Fatto
+Lettura informazioni sullo stato... Fatto   
+I seguenti pacchetti aggiuntivi saranno inoltre installati:
+  libcpufreq0
+I seguenti pacchetti NUOVI saranno installati:
+  cpufrequtils libcpufreq0
+0 aggiornati, 2 installati, 0 da rimuovere e 2 non aggiornati.
+È necessario scaricare 45,5 kB di archivi.
+Dopo quest'operazione, verranno occupati 225 kB di spazio su disco.
+Continuare? [S/n] S
+Scaricamento di:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 libcpufreq0 amd64 008-2build2 [11,1 kB]
+Scaricamento di:2 http://archive.ubuntu.com/ubuntu noble/universe amd64 cpufrequtils amd64 008-2build2 [34,4 kB]
+Recuperati 45,5 kB in 1s (89,1 kB/s)   
+Preconfigurazione dei pacchetti in corso
+Selezionato il pacchetto libcpufreq0 non precedentemente selezionato.
+(Lettura del database... 251988 file e directory attualmente installati.)
+Preparativi per estrarre .../libcpufreq0_008-2build2_amd64.deb...
+Estrazione di libcpufreq0 (008-2build2)...
+Selezionato il pacchetto cpufrequtils non precedentemente selezionato.
+Preparativi per estrarre .../cpufrequtils_008-2build2_amd64.deb...
+Estrazione di cpufrequtils (008-2build2)...
+Configurazione di libcpufreq0 (008-2build2)...
+Configurazione di cpufrequtils (008-2build2)...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+Elaborazione dei trigger per man-db (2.12.0-4build2)...
+Elaborazione dei trigger per libc-bin (2.39-0ubuntu8.4)...
+rusly05@rusly05-venusseries:~$ cpupower
+Usage:  cpupower [-d|--debug] [-c|--cpu cpulist ] <command> [<args>]
+Supported commands are:
+        frequency-info
+        frequency-set
+        idle-info
+        idle-set
+        powercap-info
+        set
+        info
+        monitor
+        help
+
+Not all commands can make use of the -c cpulist option.
+
+Use 'cpupower help <command>' for getting help for above commands.
+rusly05@rusly05-venusseries:~$ frequency-info
+frequency-info: comando non trovato
+rusly05@rusly05-venusseries:~$ cpupower frequency-info
+analyzing CPU 2:
+  driver: amd-pstate-epp
+  CPUs which run at the same hardware frequency: 2
+  CPUs which need to have their frequency coordinated by software: 2
+  maximum transition latency:  Cannot determine or is not supported.
+  hardware limits: 400 MHz - 5.26 GHz
+  available cpufreq governors: performance powersave
+  current policy: frequency should be within 400 MHz and 5.26 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency: Unable to call hardware
+  current CPU frequency: 5.14 GHz (asserted by call to kernel)
+  boost state support:
+    Supported: yes
+    Active: yes
+    AMD PSTATE Highest Performance: 196. Maximum Frequency: 5.26 GHz.
+    AMD PSTATE Nominal Performance: 149. Nominal Frequency: 4.00 GHz.
+    AMD PSTATE Lowest Non-linear Performance: 41. Lowest Non-linear Frequency: 1.10 GHz.
+    AMD PSTATE Lowest Performance: 15. Lowest Frequency: 400 MHz.
+rusly05@rusly05-venusseries:~$ cpupower  frequency-set
+Subcommand frequency-set needs root privileges
+rusly05@rusly05-venusseries:~$ sudo cpupower frequency-set -g performance
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+rusly05@rusly05-venusseries:~$ sudo cpupower frequency-set -g powersave
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+rusly05@rusly05-venusseries:~$ cpupower common info
+Usage:  cpupower [-d|--debug] [-c|--cpu cpulist ] <command> [<args>]
+Supported commands are:
+        frequency-info
+        frequency-set
+        idle-info
+        idle-set
+        powercap-info
+        set
+        info
+        monitor
+        help
+
+Not all commands can make use of the -c cpulist option.
+
+Use 'cpupower help <command>' for getting help for above commands.
+rusly05@rusly05-venusseries:~$ cpupower frequency-set -g performance
+Subcommand frequency-set needs root privileges
+rusly05@rusly05-venusseries:~$ sudo cpupower frequency-set -g performance
+Setting cpu: 0
+Setting cpu: 1
+Setting cpu: 2
+Setting cpu: 3
+Setting cpu: 4
+Setting cpu: 5
+Setting cpu: 6
+Setting cpu: 7
+Setting cpu: 8
+Setting cpu: 9
+Setting cpu: 10
+Setting cpu: 11
+Setting cpu: 12
+Setting cpu: 13
+Setting cpu: 14
+Setting cpu: 15
+rusly05@rusly05-venusseries:~$ cpupower frequency-info
+analyzing CPU 8:
+  driver: amd-pstate-epp
+  CPUs which run at the same hardware frequency: 8
+  CPUs which need to have their frequency coordinated by software: 8
+  maximum transition latency:  Cannot determine or is not supported.
+  hardware limits: 400 MHz - 5.26 GHz
+  available cpufreq governors: performance powersave
+  current policy: frequency should be within 400 MHz and 5.26 GHz.
+                  The governor "performance" may decide which speed to use
+                  within this range.
+  current CPU frequency: Unable to call hardware
+  current CPU frequency: 5.16 GHz (asserted by call to kernel)
+  boost state support:
+    Supported: yes
+    Active: yes
+    AMD PSTATE Highest Performance: 196. Maximum Frequency: 5.26 GHz.
+    AMD PSTATE Nominal Performance: 149. Nominal Frequency: 4.00 GHz.
+    AMD PSTATE Lowest Non-linear Performance: 41. Lowest Non-linear Frequency: 1.10 GHz.
+    AMD PSTATE Lowest Performance: 15. Lowest Frequency: 400 MHz.
+rusly05@rusly05-venusseries:~$ 
