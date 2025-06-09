@@ -1,0 +1,46 @@
+Descrizione di LACT (Linux AMDGPU Controller Tool):
+
+LACT è un'applicazione open-source per Linux che ti permette di controllare e monitorare le tue GPU AMD (e anche NVIDIA e Intel). È particolarmente utile per:
+
+    Overclock: Regolare le frequenze della GPU e della VRAM per ottenere prestazioni superiori.
+    Controllo della Ventola: Impostare curve di velocità della ventola personalizzate per gestire la temperatura e il rumore.
+    Monitoraggio: Visualizzare informazioni dettagliate sulla GPU, come temperature, utilizzo, consumi energetici e velocità di clock.
+    Undervolting: Ridurre la tensione della GPU per diminuire il consumo energetico e le temperature.
+
+È uno strumento essenziale per chi vuole sfruttare al massimo la propria GPU AMD su Linux, specialmente per il gaming o per carichi di lavoro intensivi.
+
+Comandi per installare LACT su Lubuntu:
+
+    Aggiorna il sistema:
+    Bash
+
+sudo apt update
+sudo apt upgrade
+
+Installa le dipendenze:
+Bash
+
+sudo apt install build-essential git cmake meson libgtk-4-dev libadwaita-1-dev libjson-glib-dev libgudev-1.0-dev libsystemd-dev
+
+Clona il repository:
+Bash
+
+git clone https://github.com/ilya-zobkov/LACT.git
+cd LACT
+
+Compila e installa:
+Bash
+
+meson build
+sudo ninja -C build install
+
+Potrebbe essere necessario riavviare il PC dopo aver aggiunto il tuo utente ai gruppi render o video (se richiesto da LACT):
+Bash
+
+sudo usermod -a -G render $USER
+sudo usermod -a -G video $USER
+
+e poi riavvia:
+Bash
+
+sudo reboot
